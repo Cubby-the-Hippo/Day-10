@@ -3,9 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Javascript stuff</title>
 </head>
 <body>
+    <h1>Let's learn Javascript</h1>
+    <h2>How do we onclick events and alerts on an anchor</h2>
+
+    <a href="https://www.youtube.com/watch?v=At8v_Yc044Y" target="_blank" onclick="alert('Warning! Your ears might expload!')">Thick of It</a>
+
+
+    <hr>
+    <h2>How do we display and hide text?</h2>
+    <h2>What's my secret identity</h2>
+    <p id="secret"></p>
+    <button onclick="document.getElementById('secret').innerHTML='Nana nana nana nana, Batman'; document.getElementById('secret').style.display='block'">Reveal</button>
+    <button onclick="document.getElementById('secret').innerHTML=''">hide</button>
+
+
+    <hr>
+    <h2>How do we change an image with javascript?</h2>
+    <img src="images/on.jpg" id="myImage" style="height:200px; width: 200px;">
+    <button onclick="document.getElementById('myImage').src='images/off.jpg'">Bulb Off</button>
+    <button onclick="document.getElementById('myImage').src='images/on.jpg'">Bulb On</button>
+
+    <h2>How do we change styles with a button?</h2>
+    <p id="alice">Hi. I am Alice</p>
+
+    <button onclick="document.getElementById('alice').style.color='blue'; document.getElementById('alice').style.fontSize='5px'">Cake - Eat me</button>
+    <button onclick="document.getElementById('alice').style.color='red'; document.getElementById('alice').style.fontSize='50px'">Potion - Drink me</button>
+
+
+    <hr>
+    <h2>Let's get moving</h2>
+    <p id="move">I'm going to move!</p>
+    <button onclick="document.getElementById('move').style.transform='rotate(30deg)'">Move me</button>    
+    <button onclick="document.getElementById('move').style.transform='none'">Get me back</button>
+
+    <hr>
+    <h2>Background color</h2>
+    <p id="background">Let's change the background color</p>
+    <button onclick="document.getElementById('background').style.backgroundColor='green'">Change me</button>
+    <button onclick="document.getElementById('background').style.backgroundColor=''">Revert me</button>
+
     
+
+
 </body>
 </html>
